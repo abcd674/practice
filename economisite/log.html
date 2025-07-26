@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="jewell/icons8-jewelry-100.png" class="p-3" style="height: 100px; width: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-tabs m-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cat.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="log.html">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mor.html">More</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <img src="jewell/icons8-shopping-bag-64.png" height="40px" width="40px" style="padding: 6px;" alt="">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- login -->
+    <div class="container-fluid">
+        <h2 class="m-4 text-center">Contact US!</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card m-3 border-0">
+                    <form onsubmit="fh()" class="m-3 p-2">
+                        <div class="row">
+                            <div class="col md-3">
+                                <label for="firstname" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <div class="col mb-3">
+                                <label for="lastname" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="lastname">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cellnum" class="form-label">Cell No.</label>
+                            <input type="text" class="form-control" id="cellnum">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-3 border-0 p-3 overflow-hidden">
+                    <img src="jewell/9.jpg" class="card-img-top h-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <!-- map -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3241.7995677329304!2d139.75218857290673!3d35.65730953585888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc6d705e88b%3A0xf4e008eb0d725019!2sHOTEL%20MYSTAYS%20Hamamatsucho!5e0!3m2!1sen!2sbd!4v1753380830889!5m2!1sen!2sbd"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <!--footer sec-->
+
+    <footer class="bg-danger-subtle">
+        <hr>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <div>
+                <p class="m-2 p-2">All Rights Reserve to &copy;SomeOne Rajshahi</p>
+            </div>
+            <div class="d-flex p-3">
+                <img src="pics/logo/icons8-facebook-50 (1).png" style=" height: 50px; width: 50px;">
+                <img src="pics/logo/icons8-insta-50 (1).png" style=" height: 50px; width: 50px;">
+                <img src="pics/logo/icons8-pinterest-48.png" style=" height: 35px; width: 35px;">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
